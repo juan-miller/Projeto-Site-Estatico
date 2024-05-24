@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <title>Portifolio - Juan Miller</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-basketball' ></i>NewDraft</a>
+<!--navegação-->
+        <ul class="navegação">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+<!--Ícons da barra de navegação-->
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="imagens/bola.png" class="one">
+        </div>
+
+        <div class="home-text">
+
+            <h1>Seus Produtos<br> de Basquete</h1>
+            <h5>A partir de</h5>
+            <h3>R$199.00</h3>
+            <a href="#secao-projetos" class="btn">Compre agora</a>
+ 
+            
+        </div>
+    </section>
+
+
+    <div class="main">
+        <div class="row">
+            <li><img src="imagens/bola.png" onclick="slider('imagens/bola.png')"></li>
+        </div>
+
+        <div class="row2">
+            <li><img src="imagens/regata.png" onclick="slider('imagens/regata.png')"></li>
+        </div>
+
+        <div class="row3">
+            <li><img src="imagens/sixers_logo.png" onclick="slider('imagens/sixers_logo.png')"></li>
+        </div>
+    </div>
+    <section id="secao-apresentacao">
+        <img id="avatar" src="imagens/logo.png">
+        <div>
+            <h2>A NBA está de volta e ainda melhor!</h2>
+            <p>Somos obcecados em oferecer a melhor experiência de compra da internet. Somos conectados à inovação e capazes de nos adaptar de forma rápida às mudanças – sejam elas internas, no mercado e principalmente no comportamento de nossos clientes.
+                </p>
+            <a href="#">Confira nossos produtos</a>
+        </div>
+    </section>
+
+    <section id="secao-projetos">
+        <ul>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="imagens/regata_classica.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Regatas</h2>
+                        <p>Em busca das regatas dos seus jogadores favoritos? Venha conferir com a gente.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="imagens/moletom.webp" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Moletons</h2>
+                        <p>Procurando por moletom basquete? Confira as ofertas que a New Jersey separou para você.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="image-wrapper">
+                        <img src="https://static.prospin.com.br/media/catalog/product/cache/6e59e4946046b080cb91aa3230980e44/d/o/do8261-039-bola-de-basquete-nike-everyday-playground-8p-graphic-deflated-preta-e-branca.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2>Acessórios</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, ut!</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="secao-orcamento">
+
+        <h2>Faça seu cadastro:</h2>
+
+        <form action="">
+            <div class="campo linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="paginas">Idade</label>
+                <input type="number" id="paginas" value="1" min="1">
+            </div>
+
+            <div class="campo">
+                <label for="tipo">Sexo</label>
+                <select name="tipo" id="tipo">
+                    <option ></option>
+                    <option value="1">Masculino</option>
+                    <option value="2">Feminino</option>
+                    <option value="3">Outro</option>
+                    <option value="4">Prefiro não dizer</option>
+                </select>
+            </div>
+
+            <div class="campo linha">
+                <label for="prototipo">Recomendaria o site para algum amigo ou familiar?</label>
+                <div>
+                    <input name="prototipo" type="radio" id="prototipo_sim">
+                    <label for="prototipo_sim">Sim, com certeza!</label>
+                    <input name="prototipo" type="radio" id="prototipo_nao">
+                    <label for="prototipo_nao">Não, obrigado.</label>
+                </div>
+            </div>
+
+            <div class="linha">
+                <input type="checkbox" id="js">
+                <label for="js">Gostaria de receber anúncios e e-mails promocionais em minha conta.</label>
+            </div>
+
+            <div class="campo linha">
+                <label for="prazo">Satisfação</label>
+                <input type="range" name="prazo" id="prazo" min="1" max="6">
+            </div>
+
+
+        </form>
+
+        
+    </section>
+    <script>
+        function slider (anything){
+            document.querySelector ('.one') .src = anything;
+        };
+
+       let menu = document.querySelector ('#menu-icon');
+       let navbar = document.querySelector ('.navbar');
+
+       menu.onclick = () => {
+        menu.classList.toggle ('bx-x');
+        navbar.classList.toggle ('open');
+       }
+    </script>
+    
+</body>
+</html>
