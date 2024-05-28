@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/form.css">
     <title>Portifolio - Juan Miller</title>
 </head>
+
 <body>
 
     <header>
-        <a href="#" class="logo"><i class='bx bxs-basketball' ></i>NewDraft</a>
-<!--navegação-->
+        <a href="#" class="logo"><i class='bx bxs-basketball'></i>NewDraft</a>
+        <!--navegação-->
         <ul class="navegação">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Sobre nós</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
-<!--Ícons da barra de navegação-->
+        <!--Ícons da barra de navegação-->
         <div class="header-icons">
             <i class='bx bx-cart'></i>
             <div id="menu"><i class='bx bx-menu'></i></div>
@@ -44,8 +46,8 @@
             <h5>A partir de</h5>
             <h3>R$199.00</h3>
             <a href="#secao-projetos" class="btn">Compre agora</a>
- 
-            
+
+
         </div>
     </section>
 
@@ -67,8 +69,10 @@
         <img id="avatar" src="imagens/logo.png">
         <div>
             <h2>A NBA está de volta e ainda melhor!</h2>
-            <p>Somos obcecados em oferecer a melhor experiência de compra da internet. Somos conectados à inovação e capazes de nos adaptar de forma rápida às mudanças – sejam elas internas, no mercado e principalmente no comportamento de nossos clientes.
-                </p>
+            <p>Somos obcecados em oferecer a melhor experiência de compra da internet. Somos conectados à inovação e
+                capazes de nos adaptar de forma rápida às mudanças – sejam elas internas, no mercado e principalmente no
+                comportamento de nossos clientes.
+            </p>
             <a href="#">Confira nossos produtos</a>
         </div>
     </section>
@@ -100,10 +104,11 @@
             <li>
                 <div class="card">
                     <div class="image-wrapper">
-                        <img src="https://static.prospin.com.br/media/catalog/product/cache/6e59e4946046b080cb91aa3230980e44/d/o/do8261-039-bola-de-basquete-nike-everyday-playground-8p-graphic-deflated-preta-e-branca.jpg" alt="">
+                        <img src="https://static.prospin.com.br/media/catalog/product/cache/6e59e4946046b080cb91aa3230980e44/d/o/do8261-039-bola-de-basquete-nike-everyday-playground-8p-graphic-deflated-preta-e-branca.jpg"
+                            alt="">
                     </div>
                     <div class="card-text">
-                        <h2>Acessórios</h2>
+                        <h2>Bolas</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque, ut!</p>
                     </div>
                 </div>
@@ -113,7 +118,7 @@
 
     <section id="secao-orcamento">
 
-        <h2>Faça seu cadastro:</h2>
+        <h2 id="formulario">Faça seu cadastro:</h2>
 
         <form action="">
             <div class="campo linha">
@@ -122,14 +127,14 @@
             </div>
 
             <div class="campo">
-                <label for="paginas">Idade</label>
-                <input type="number" id="paginas" value="1" min="1">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" value="1" min="1">
             </div>
 
             <div class="campo">
-                <label for="tipo">Sexo</label>
-                <select name="tipo" id="tipo">
-                    <option ></option>
+                <label for="sexo">Sexo</label>
+                <select name="sexo" id="tipo">
+                    <option></option>
                     <option value="1">Masculino</option>
                     <option value="2">Feminino</option>
                     <option value="3">Outro</option>
@@ -138,43 +143,52 @@
             </div>
 
             <div class="campo linha">
-                <label for="prototipo">Recomendaria o site para algum amigo ou familiar?</label>
+                <label for="recomenda">Recomendaria o site para algum amigo ou familiar?</label>
                 <div>
-                    <input name="prototipo" type="radio" id="prototipo_sim">
-                    <label for="prototipo_sim">Sim, com certeza!</label>
-                    <input name="prototipo" type="radio" id="prototipo_nao">
-                    <label for="prototipo_nao">Não, obrigado.</label>
+                    <input name="recomenda" type="radio" id="recomenda_sim">
+                    <label for="recomenda_sim">Sim, com certeza!</label>
+                    <input name="recomenda" type="radio" id="recomenda_nao">
+                    <label for="recomenda_nao">Não, obrigado.</label>
                 </div>
             </div>
 
             <div class="linha">
-                <input type="checkbox" id="js">
-                <label for="js">Gostaria de receber anúncios e e-mails promocionais em minha conta.</label>
+                <input type="checkbox" id="email">
+                <label for="email">Gostaria de receber anúncios e e-mails promocionais em minha conta.</label>
             </div>
 
-            <div class="campo linha">
-                <label for="prazo">Satisfação</label>
-                <input type="range" name="prazo" id="prazo" min="1" max="6">
+            <div>
+                <ul class="avaliacao">
+                    <li class="star-icon ativo" data-avaliacao="1"></li>
+                    <li class="star-icon" data-avaliacao="2"></li>
+                    <li class="star-icon" data-avaliacao="3"></li>
+                    <li class="star-icon" data-avaliacao="4"></li>
+                    <li class="star-icon" data-avaliacao="5"></li>
+                </ul>
             </div>
 
 
         </form>
+        <a id="btn-enviar">Enviar</a>
 
-        
     </section>
     <script>
-        function slider (anything){
-            document.querySelector ('.one') .src = anything;
+
+        function slider(anything) {
+            document.querySelector('.one').src = anything;
         };
 
-       let menu = document.querySelector ('#menu-icon');
-       let navbar = document.querySelector ('.navbar');
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
 
-       menu.onclick = () => {
-        menu.classList.toggle ('bx-x');
-        navbar.classList.toggle ('open');
-       }
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navbar.classList.toggle('open');
+        }
     </script>
-    
+
+
+
 </body>
+
 </html>
