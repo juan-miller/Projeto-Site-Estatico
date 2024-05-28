@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,8 +7,8 @@
     list-style: none;
 }
 
-:root{
-    --bg-color:var(--bg-color) #1d2631;
+:root {
+    --bg-color: var(--bg-color) #1d2631;
     --tex-color: #fff;
     --main-color: #c55d07;
     --other-color: #fcfcfc;
@@ -18,12 +17,12 @@
 }
 
 
-body{
-    background-color:#000000 ;
+body {
+    background-color: #000000;
     color: var(--tex-color);
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -37,7 +36,7 @@ header{
 }
 
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     color: var(--tex-color);
@@ -45,17 +44,17 @@ header{
     font-weight: bold;
 }
 
-.logo i{
+.logo i {
     color: var(--main-color);
     font-size: 32px;
     margin-right: 5px;
 }
 
-.navegação{
+.navegação {
     display: flex;
 }
 
-.navegação a{
+.navegação a {
     color: var(--other-color);
     font-size: var(--p-font);
     font-weight: 500;
@@ -63,42 +62,43 @@ header{
     transition: a .55s ease;
 }
 
-.navegação a:hover{
+.navegação a:hover {
     color: var(--main-color);
 
 }
 
 
-.header-icons{
+.header-icons {
     display: flex;
     align-items: center;
 }
 
-#menu{
+#menu {
     font-size: 35px;
     color: var(--tex-color);
     z-index: 10001;
     cursor: pointer;
 }
 
-.header-icons i{
+.header-icons i {
     margin-right: 25px;
     font-size: 28px;
     cursor: pointer;
     transition: all .5s ease;
 }
 
-.header-icons i:hover{
+.header-icons i:hover {
     transform: translateY(-5px);
     color: var(--main-color);
 }
 
 
-.section{
+.section {
 
     padding: 0 15%;
 }
-.home{
+
+.home {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -108,20 +108,20 @@ header{
     gap: 2rem;
 }
 
-.home-text h1{
+.home-text h1 {
     font-size: var(--h1-font);
     line-height: 1.2;
     margin-bottom: 2px;
 }
 
-.home-text h5{
+.home-text h5 {
     color: #ffffff99;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 60px;
 }
 
-.home-text h3{
+.home-text h3 {
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -129,7 +129,7 @@ header{
 }
 
 
-.home-img img{
+.home-img img {
     max-width: 100%;
     width: 28rem;
     height: auto;
@@ -137,7 +137,7 @@ header{
 }
 
 
-.btn{
+.btn {
     display: inline-block;
     padding: 15px 70px;
     font-size: 16px;
@@ -150,13 +150,13 @@ header{
 
 
 
-.btn:hover{
+.btn:hover {
     background: var(--tex-color);
     border: 2px solid var(--tex-color);
     color: #000;
 }
 
-.main{
+.main {
     position: absolute;
     top: 50%;
     left: 3%;
@@ -168,13 +168,13 @@ header{
     gap: 2rem;
 }
 
-.main li img{
+.main li img {
     width: 50px;
     max-width: 100%;
 }
 
-.row{
-    
+.row {
+
     background-color: white;
     height: 70px;
     width: 70px;
@@ -186,7 +186,7 @@ header{
 }
 
 
-.row2{
+.row2 {
     background: #ff012c;
     height: 70px;
     width: 70px;
@@ -199,7 +199,7 @@ header{
 
 
 
-.row3{
+.row3 {
     background: #002fff;
     height: 70px;
     width: 70px;
@@ -211,7 +211,7 @@ header{
 
 }
 
-#avatar{
+#avatar {
     /* border-radius: 50% ; */
     margin-top: 5px;
     height: 100px;
@@ -219,7 +219,7 @@ header{
 }
 
 
-#secao-apresentacao{
+#secao-apresentacao {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     display: flex;
@@ -228,7 +228,7 @@ header{
     padding: 2rem;
 }
 
-#secao-projetos{
+#secao-projetos {
     height: 100vh;
     background-color: #071349;
 }
@@ -240,27 +240,27 @@ header{
     place-items: center;
 }
 
-#secao-projetos li{
+#secao-projetos li {
     list-style: none;
 }
 
 .card {
-    max-width: 300px; 
+    max-width: 300px;
     height: 420px;
     color: var(--white);
     position: relative;
     cursor: pointer;
- }
- 
- .card:hover .card-text{
-   opacity: 1;  
- }
- 
- .card:hover .image-wrapper{
-     opacity: .3;
- }
+}
 
- .image-wrapper {
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.card:hover .image-wrapper {
+    opacity: .3;
+}
+
+.image-wrapper {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -272,14 +272,14 @@ header{
     object-fit: cover;
 }
 
-.card-text{
+.card-text {
     position: absolute;
     top: 0;
     opacity: 0;
     transition: opacity 1s;
-} 
+}
 
-#secao-orcamento{
+#secao-orcamento {
     background-color: red;
     height: 100vh;
     padding: 3rem;
@@ -295,3 +295,76 @@ header{
     font-size: 1.5rem;
 }
 
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.linha {
+    grid-column: 1 / 3;
+}
+
+#formulario {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+
+    .botoes {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.avaliacao {
+    display: flex;
+
+}
+
+.star-icon {
+    list-style-type: none;
+    border: 1px solid #ff0000;
+    cursor: pointer;
+    color: #ffe500;
+    font-size: 20px;
+
+}
+
+.star-icon::before {
+    content: "\2605";
+}
+
+.star-icon.ativo~.star-icon::before {
+    content: "\2606";
+}
+
+.avaliacao:hover .star-icon::before {
+    content: "\2605";
+}
+
+.star-icon:hover~.star-icon::before {
+    content: "\2606";
+}
+
+#btn-enviar {
+    display: flex;
+    padding: 15px 70px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    border: solid 2px var(--tex-color);
+    transition: all.55 ease;
+    color: #fff;
+    justify-content: center;
+
+}
+#btn-enviar:hover {
+    background: var(--tex-color);
+    border: 2px solid var(--tex-color);
+    color: #000;
+}
